@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 
 #include <time.h>
 
@@ -7,14 +7,14 @@ nclude <stdlib.h>
 
 
 /**
+
+ * main - Entry point
+
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success/correct)
- *
- *     */
+
+ * Return: Always 0 (Success/correct)
+
+ */
 
 
 
@@ -22,43 +22,43 @@ int main(void)
 
 {
 
-	int n;
+int n;
 
 
 
-	srand(time(0));
+srand(time(0));
 
-	n = rand() - RAND_MAX / 2;
-
-
-
-	if (n == 0)
-
-	{
-
-		printf("%i is zero\n", n);
-
-	}
+n = rand() - RAND_MAX / 2;
 
 
 
-	else if (n < 0)
+if (n == 0)
 
-	{
+{
 
-		printf("%i is negative\n", n);
+printf("%i is zero\n", n);
 
-	}
+}
 
-	else
 
-	{
 
-		printf("%i is positive\n", n);
+else if (n < 0)
 
-	}
+{
 
-	return (0);
+printf("%i is negative\n", n);
+
+}
+
+else
+
+{
+
+printf("%i is positive\n", n);
+
+}
+
+return (0);
 
 }
 
