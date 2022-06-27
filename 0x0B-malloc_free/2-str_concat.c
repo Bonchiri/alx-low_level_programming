@@ -1,10 +1,10 @@
 #include <stdlib.h>
 /**
- * str_concat - function that concatenates two strings.
- * @s1: input char 1
- * @s2: input char 2
- * Return char
- */
+* str_concat - function that concatenates two strings.
+* @s1: input char 1
+* @s2: input char 2
+* Return char
+*/
 char *str_concat(char *s1, char *s2)
 {
 char *cat;
